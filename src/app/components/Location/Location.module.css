@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  width: 95%;
+  max-width: var(--max-width);
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem 0;
+}
+
+.map {
+  outline: 1px solid var(--border-color)
+}

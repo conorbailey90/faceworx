@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+  background-color: white;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: var(--max-width);
+}
+
+.logo h3 {
+  font-family: "Panchang";
+  font-size: 2rem;
+  color: var(--main-text-color);
+}
+
+.navLinks ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navLinks ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navLinks ul li a {
+  color: var(--main-text-color);
+}
+
+.navLinks ul li:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .navLinks {
+    display: none;
+  }
+}

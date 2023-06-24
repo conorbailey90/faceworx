@@ -1,0 +1,27 @@
+.logo {
+  font-family: "Panchang";
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: black;
+  z-index: 4;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  max-width: var(--max-width);
+}
+
+.footerContact p {
+  color: white;
+}

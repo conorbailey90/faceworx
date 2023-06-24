@@ -1,0 +1,27 @@
+.separator {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background-color: #161616; */
+  /* background-image: url(/images/marble.avif); */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  opacity: 0.4;
+  /* filter: grayscale(100%); */
+  /* filter: grayscale(100%) blur(10px); */
+}
+
+.container {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  /* backdrop-filter: blur(50px); */
+  z-index: 1;
+}
+
+.image {
+  filter: grayscale(100%) blur(10px);
+}

@@ -1,0 +1,115 @@
+.container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: var(--max-width);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.scrollSection {
+  width: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
+  padding: 0 1rem;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+.scrollSection::-webkit-scrollbar {
+  display: none;
+}
+
+.subContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: calc(1600px + 5vw + 30px);
+  /* gap: var(--gap); */
+}
+
+.testimonialBlock {
+  border: 1px solid var(--border-color);
+  width: 400px;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background: #161616;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.testimonialBlock p,
+.testimonialBlock h5 {
+  color: var(--main-text-color);
+}
+
+.scrollIndicator {
+  position: relative;
+  margin-top: 1rem;
+  width: 300px;
+  height: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  left: -200%;
+  width: 200%;
+  height: 100%;
+  background-color: var(--border-color);
+}
+
+.arrowContainer {
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+.svg {
+  width: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .scrollSection {
+    width: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    border: 1px solid var(--border-color);
+    padding: 0;
+  }
+  .subContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: calc(1400px + 5vw + 30px);
+  }
+  .testimonialBlock {
+    border: 1px solid var(--border-color);
+    width: 350px;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background: #161616;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+}
