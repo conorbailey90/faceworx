@@ -8,6 +8,11 @@
   src: url(../../public/Melodrama-Light.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "bodoni";
+  src: url(/public/BodoniModa_28pt-Regular.ttf) format("truetype");
+}
+
 :root {
   --main-bg-color: #ffffff;
   --main-text-color: #161616;

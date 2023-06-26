@@ -19,6 +19,7 @@ export default function Header() {
                     <div className={styles.logo}>
                         <h3>FACEWORX</h3>
                     </div>
+                 
                 </div>
                
                 <div className={styles.navLinks}>

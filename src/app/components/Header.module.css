@@ -22,9 +22,10 @@
 }
 
 .logo h3 {
-  font-family: "Panchang";
-  font-size: 2rem;
+  font-family: "bodini";
+  font-size: 1.2rem;
   color: var(--main-text-color);
+  letter-spacing: 0.5em;
 }
 
 .navLinks ul {
@@ -48,6 +49,10 @@
 .navLinks ul li:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+
+.fwLogo {
+  width: 25px;
 }
 
 @media only screen and (max-width: 600px) {

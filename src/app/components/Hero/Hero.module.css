@@ -1,7 +1,8 @@
+
 .container {
   position: relative;
   width: 100%;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   min-height: 100vh;
   padding-top: calc(100px + 7rem);
   display: flex;
@@ -22,16 +23,25 @@
 
 .heroText {
   position: relative;
-  grid-column: 1 / span 10;
+  grid-column: 1 / span 6;
   display: flex;
   flex-direction: column;
+  align-items: center;
   z-index: 1;
+  opacity: .8;
+
 }
 
 .cta {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  max-width: 600px;
+  margin-top: 1rem;
+  display: flex;
+  /* grid-template-columns: repeat(12, 1fr); */
   gap: var(--gap);
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 15%;
 }
 
 .heroImage {
@@ -47,18 +57,26 @@
 }
 
 .logo {
-  font-size: 5rem;
-  font-family: "Panchang";
+  font-size: 1.6rem;
+  font-family: "bodoni";
+  font-weight: 100;
+  letter-spacing: .5em;
+  margin-right: -.5em;
   color: var(--main-text-color);
+  text-align: center;
 }
 
 .tagLine {
-  margin: 1rem 0;
+  margin: .5rem 0;
+  font-family: "bodoni";
+  font-weight: 100;
+  font-size: .8rem;
   text-transform: uppercase;
   color: var(--main-text-color);
 }
 
 .buttonFill {
+  flex: 1;
   position: relative;
   display: flex;
   z-index: 2;
@@ -79,12 +97,13 @@
 }
 
 .buttonStroke {
+  flex: 1;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   padding: 1rem;
   background-color: transparent;
   border: 1px solid var(--border-color);
@@ -132,6 +151,15 @@
   );
 }
 
+.fwLogo {
+  width: clamp(10px, 50%, 70px);
+  margin-bottom: 1rem;
+  opacity: .8;
+
+}
+
+
+
 @media only screen and (max-width: 1200px) {
   .buttonFill {
     grid-column: 1 / span 3;
@@ -141,6 +169,24 @@
   .buttonStroke {
     grid-row: 2;
     grid-column: 4 / span 3;
+  }
+
+  .cta {
+    padding: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 710px){
+  .cta {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(12, 1fr); */
+    gap: var(--gap);
+    /* background-color: red; */
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -159,11 +205,12 @@
   }
 
   .heroText {
-    grid-column: 1 / span 12;
+    grid-column: 1 / span 6;
   }
 
   .logo {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-weight: 100;
   }
 
   .tagLine {
@@ -173,6 +220,7 @@
     color: var(--main-text-color);
   }
 
+ 
   .buttonFill {
     position: relative;
     display: flex;
@@ -188,5 +236,26 @@
     grid-row: 2;
     border-radius: 10px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .logo {
+    font-size: 1.2rem;
+    font-family: "bodoni";
+    font-weight: 100;
+    letter-spacing: .5em;
+    margin-right: -.5em;
+    color: var(--main-text-color);
+    text-align: center;
+  }
+  
+  .tagLine {
+    margin: .5rem 0;
+    font-family: "bodoni";
+    font-weight: 100;
+    font-size: .65rem;
+    text-transform: uppercase;
+    color: var(--main-text-color);
   }
 }
