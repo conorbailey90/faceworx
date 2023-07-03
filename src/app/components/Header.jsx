@@ -42,18 +42,16 @@ export default function Header() {
         
        }
 
-    //    const handlePrivacyPageClick = () => {
-    //     setMainPage(true)
-    //    }
     return(
         !mainPage ?
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.topLayer}>
-                    <div className={styles.logo}>
-                        <h3>FACEWORX</h3>
-                    </div>
-                 
+                    <Link href={'/'}>
+                        <div className={styles.logo}>
+                            <h3>FACEWORX</h3>
+                        </div>
+                    </Link>
                 </div>
                
                 <div className={styles.navLinks}>
@@ -72,9 +70,11 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.topLayer}>
+                <Link href={'/'}>
                     <div className={styles.logo}>
                         <h3>FACEWORX</h3>
                     </div>
+                </Link >
                  
                 </div>
                

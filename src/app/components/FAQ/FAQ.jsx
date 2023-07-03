@@ -20,7 +20,7 @@ function FAQ() {
 
         <div className={styles.accordianContainer}>
             {FAQS.map(faq => (
-                <FAQItem question={faq.question} answer={faq.answer} />
+                <FAQItem key={faq.id} question={faq.question} answer={faq.answer} />
             ))}
         </div>
      
