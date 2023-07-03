@@ -3,6 +3,7 @@ import styles from './Treatments.module.css'
 export default function Treatments() {
   return (
     <div id="treatments" className={styles.container}>
+      <h2 style={{gridColumn: '4 / span 8'}}>Treatments</h2>
         <div className={styles.treatmentOne}>
             <h3>Botox</h3><br />
             <p>Experience smoother, more youthful-looking skin with our Botox treatments. Our skilled team delivers safe and effective injections, targeting facial wrinkles and lines. Achieve natural-looking results with minimal downtime. Schedule your consultation today.</p>

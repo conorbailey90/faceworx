@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  overflow: hidden;
+  z-index: 4;
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-bottom: 1px solid var(--border-color); */
+}
+
+.subContainer {
+  width: 95%;
+  max-width: var(--max-width);
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.botoxPrices{
+  grid-column: 1 / span 5;
+
+}
+
+.dfPrices{
+  grid-column: 7 / span 5;
+}
+
+.priceLi{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding: .5rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .botoxPrices{
+    grid-column: 1 / span 13;
+  
+  }
+  
+  .dfPrices{
+    grid-column: 1 / span 13;
+    margin-top: 1rem;
+  }
+  
+  .priceLi{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: .5rem 0;
+  }
+}

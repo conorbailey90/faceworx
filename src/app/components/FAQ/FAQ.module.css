@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+  z-index: 4;
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-bottom: 1px solid var(--border-color); */
+}
+
+.subContainer {
+  width: 95%;
+  max-width: var(--max-width);
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.accordianContainer{
+    grid-column: 1 / span 13;
+}
+

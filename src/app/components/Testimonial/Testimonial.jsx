@@ -37,8 +37,8 @@ export default function Testimonial() {
                     <div ref={container} className={styles.subContainer}>
                         {testimonials.map(t => (
                             <div className={styles.testimonialBlock}>
-                                <h5>"{t.testimonial}"</h5><br />
-                                <h5>{t.name}</h5>
+                                <p>"{t.testimonial}"</p><br />
+                                <p>{t.name}</p>
                             </div>
                         ))}
                     </div>

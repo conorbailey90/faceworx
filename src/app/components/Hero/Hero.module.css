@@ -1,10 +1,9 @@
-
 .container {
   position: relative;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
   min-height: 100vh;
-  padding-top: calc(100px + 7rem);
+  padding-top: calc(150px);
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -17,8 +16,7 @@
   gap: var(--gap);
   max-width: var(--max-width);
   grid-template-columns: repeat(12, 1fr);
-  /* grid-template-rows: 50px 50px; */
-  /* z-index: 11; */
+  /* background: red; */
 }
 
 .heroText {
@@ -28,12 +26,13 @@
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  opacity: .8;
-
+  opacity: 0.8;
+  /* background: red; */
+  max-width: 600px;
 }
 
 .cta {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-top: 1rem;
   display: flex;
   /* grid-template-columns: repeat(12, 1fr); */
@@ -41,7 +40,7 @@
   /* background-color: red; */
   justify-content: space-around;
   width: 100%;
-  padding: 0 15%;
+  /* padding: 0 15%; */
 }
 
 .heroImage {
@@ -56,25 +55,6 @@
   height: 100%;
 }
 
-.logo {
-  font-size: 1.6rem;
-  font-family: "bodoni";
-  font-weight: 100;
-  letter-spacing: .5em;
-  margin-right: -.5em;
-  color: var(--main-text-color);
-  text-align: center;
-}
-
-.tagLine {
-  margin: .5rem 0;
-  font-family: "bodoni";
-  font-weight: 100;
-  font-size: .8rem;
-  text-transform: uppercase;
-  color: var(--main-text-color);
-}
-
 .buttonFill {
   flex: 1;
   position: relative;
@@ -84,16 +64,20 @@
   font-size: 0.8rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
   grid-row: 2;
   text-transform: uppercase;
   text-align: center;
   background-color: var(--main-text-color);
-  border-radius: 10px;
 }
 
 .buttonFill > div {
   color: white;
+  font-family: "Sentient";
+}
+
+.buttonStroke > div {
+  font-family: "Sentient";
 }
 
 .buttonStroke {
@@ -103,15 +87,14 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
-  font-size: 0.7rem;
-  padding: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem 0;
   background-color: transparent;
   border: 1px solid var(--border-color);
   color: var(--main-text-color);
   text-transform: uppercase;
   grid-row: 2;
   grid-column: 3 / span 2;
-  border-radius: 10px;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
@@ -151,33 +134,21 @@
   );
 }
 
-.fwLogo {
-  width: clamp(10px, 50%, 70px);
-  margin-bottom: 1rem;
-  opacity: .8;
-
+.scrollIndicator {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
-
-
 
 @media only screen and (max-width: 1200px) {
-  .buttonFill {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-  }
-
-  .buttonStroke {
-    grid-row: 2;
-    grid-column: 4 / span 3;
-  }
-
   .cta {
-    padding: 0;
+    /* padding: 5%; */
   }
-  
 }
 
-@media only screen and (max-width: 710px){
+@media only screen and (max-width: 710px) {
   .cta {
     margin-top: 1rem;
     display: flex;
@@ -220,42 +191,23 @@
     color: var(--main-text-color);
   }
 
- 
   .buttonFill {
     position: relative;
     display: flex;
     z-index: 2;
-    grid-column: 1 / span 5;
+    /* grid-column: 1 / span 5; */
 
     grid-row: 1;
     color: white;
   }
 
   .buttonStroke {
-    grid-column: 1 / span 5;
-    grid-row: 2;
-    border-radius: 10px;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   }
 }
 
-@media only screen and (max-width: 500px){
-  .logo {
-    font-size: 1.2rem;
-    font-family: "bodoni";
-    font-weight: 100;
-    letter-spacing: .5em;
-    margin-right: -.5em;
-    color: var(--main-text-color);
-    text-align: center;
-  }
-  
-  .tagLine {
-    margin: .5rem 0;
-    font-family: "bodoni";
-    font-weight: 100;
-    font-size: .65rem;
-    text-transform: uppercase;
-    color: var(--main-text-color);
+@media only screen and (max-width: 500px) {
+  .heroTag {
+    font-size: 0.833rem;
   }
 }

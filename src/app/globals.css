@@ -4,14 +4,44 @@
 }
 
 @font-face {
-  font-family: "Panchang";
-  src: url(../../public/Melodrama-Light.woff2) format("woff2");
+  font-family: "Sentient";
+  src: url(../../public/Sentient-Regular.otf) format("opentype");
 }
 
 @font-face {
-  font-family: "bodoni";
-  src: url(/public/BodoniModa_28pt-Regular.ttf) format("truetype");
+  font-family: "Sentient";
+  src: url(../../public/mn400.woff2) format("woff2");
 }
+
+h1, h2{
+  font-family: 'Sentient';
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h5{
+  font-size: 1.2rem;
+}
+
+h4{
+  font-size: 1.44rem;
+}
+
+h3{
+  font-size: 1.728rem;
+}
+
+h2{
+  font-size: 2.074rem;
+}
+
+h1{
+  font-size: 2.448rem;
+}
+
 
 :root {
   --main-bg-color: #ffffff;
@@ -57,4 +87,32 @@ main {
 
 .nav-active > div > div:nth-child(2) > ul > li > a {
   color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  p{
+    font-size: .833rem;
+  }
+  h5{
+  font-size: 1rem;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+h3{
+  font-size: 1.44rem;
+}
+
+h2{
+  font-size: 1.44rem;
+}
+
+h1{
+  font-size: 2.074rem;
+}
+
 }

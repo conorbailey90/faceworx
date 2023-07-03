@@ -25,7 +25,6 @@
   /* border: 1px solid var(--border-color); */
   padding: 0 1rem;
   background-color: #161616;
-  border-radius: 10px;
 }
 
 .scrollSection::-webkit-scrollbar {
@@ -44,7 +43,7 @@
 .testimonialBlock {
   border: 1px solid var(--border-color);
   width: 400px;
-  border-radius: var(--border-radius);
+
   padding: 1rem;
   background: #161616;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -63,7 +62,7 @@
   border: 1px solid rgba(0, 0, 0, 0.34);
   left: 50%;
   transform: translatex(-50%);
-  border-radius: 10px;
+
   overflow: hidden;
 }
 
@@ -107,7 +106,6 @@
   .testimonialBlock {
     border: 1px solid var(--border-color);
     width: 350px;
-    border-radius: var(--border-radius);
     padding: 1rem;
     background: #161616;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);

@@ -36,7 +36,6 @@
   grid-row: 1;
   margin-top: 50px;
   overflow: hidden;
-  border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
 }
 

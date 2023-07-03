@@ -22,10 +22,10 @@
 }
 
 .logo h3 {
-  font-family: "bodini";
+  font-family: "Sentient";
   font-size: 1.2rem;
   color: var(--main-text-color);
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 .navLinks ul {

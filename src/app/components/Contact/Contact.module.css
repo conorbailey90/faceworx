@@ -23,7 +23,6 @@
   padding: 1rem;
   margin: 1rem 0;
   border: none;
-  border-radius: 10px;
 }
 
 .input:focus,
@@ -37,7 +36,6 @@
   padding: 0.5rem 0;
   margin: 1rem 0;
   border: none;
-  border-radius: 10px;
   padding: 1rem;
 }
 
@@ -46,7 +44,6 @@
   border: 1px solid var(--border-color);
   padding: 0.5rem;
   width: 100%;
-  border-radius: 10px;
 }
 .submit:hover {
   cursor: pointer;

@@ -1,6 +1,6 @@
 .logo {
-  font-family: "bodini";
-  letter-spacing: 0.5em;
+  font-family: "Sentient";
+  letter-spacing: 0.3em;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: white;
@@ -18,7 +18,7 @@
 
 .container {
   display: flex;
-  width: 90%;
+  width: 95%;
   flex-direction: column;
   max-width: var(--max-width);
 }

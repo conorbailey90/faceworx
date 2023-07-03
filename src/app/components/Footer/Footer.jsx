@@ -1,4 +1,7 @@
 import styles from './Footer.module.css'
+import Link from 'next/link'
+import Image from 'next/image'
+import igLogo from 'public/svg/logo-instagram.svg'
 
 export default function Footer() {
   return (
@@ -14,10 +17,11 @@ export default function Footer() {
             <p>CM12 9TD</p>
         </div>
         <div className={styles.socials}>
-          <a href="">LI</a>
-          <a href="">IG</a>
+    
+           
         </div>
-    </div>
+          <Link style={{color: 'grey', marginTop: '2rem'}} href={'/privacy'}>Privacy Policy</Link>
+        </div>
     </footer>
   )
 }

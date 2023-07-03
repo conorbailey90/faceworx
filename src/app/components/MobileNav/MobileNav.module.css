@@ -102,13 +102,24 @@
   top: -10%;
   display: flex;
   flex-direction: column;
-  height: 150px;
+  width: 95%;
+  /* height: 150px; */
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
+  /* background-color: orange; */
 }
 
 .link {
+  font-size: 3rem;
+  font-family: 'Sentient';
+  text-transform: uppercase;
   color: white;
+  /* border-bottom: 1px solid white; */
+  width: 100%;
+}
+
+.link:hover {
+  opacity: .7;
 }
 
 @media only screen and (max-width: 600px) {

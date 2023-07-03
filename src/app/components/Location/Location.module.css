@@ -13,5 +13,12 @@
 }
 
 .map {
-  outline: 1px solid var(--border-color)
+  outline: 1px solid var(--border-color);
+}
+
+.socials {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
