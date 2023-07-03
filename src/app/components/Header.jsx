@@ -5,7 +5,6 @@ import styles from './Header.module.css'
 
 export default function Header() {
 
-    const [location, setLocation] = useState(window.location.href)
     const [mainPage, setMainPage] = useState()
 
     useEffect(() => {
@@ -18,18 +17,19 @@ export default function Header() {
     }, [])
 
     useEffect(() => {
-        window.addEventListener('click', () => {
+        function handleClick(){
             setTimeout(() => {
-                if(window.location.href !== location){
-                    setLocation(window.location.href)
-                }
                 if(window.location.pathname !== '/privacy'){
                     setMainPage(true)
                 }else{
                     setMainPage(false)
                 }
-            }, 50)
-        })
+            }, 100)
+        }
+        window.addEventListener('click', handleClick)
+
+        return () => window.removeEventListener('click', handleClick);
+
     } ,[])
 
     const scrollHandle = (e) => {
@@ -88,6 +88,5 @@ export default function Header() {
                 </div>
             </div>
         </header>
-
     )
 }
