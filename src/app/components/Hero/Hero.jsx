@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Hero.module.css';
 import Logo from '../Logo/Logo';
+import { motion } from "framer-motion"
 
 
 export default function Hero() {
@@ -18,33 +19,53 @@ export default function Hero() {
    }
    
   return (
-    <div id='home' className={styles.container}>
-        <div className={styles.heroImage}></div>
-        <div className={styles.grid}>
-          <div className={styles.heroText}>
+    <motion.div 
+    
+    id='home' className={styles.container}>
+        <motion.div    
+        initial={{ opacity: 0 }}
+        animate={{opacity: 1}}
+        transition={{ duration: 1, delay: .5 }}  
+        className={styles.heroImage}></motion.div>
+        <motion.div className={styles.grid}>
+         
+        
+          <motion.div 
+            initial={{ opacity: 0, translateY: 5 }}
+            animate={{opacity: 1, translateY: 0}}
+            transition={{ duration: 1, delay: 1 }}  
+            className={styles.heroText}>
             <Logo />
             <h5 className={styles.heroTag} style={{ textAlign: 'center', textTransform: 'uppercase', width: '100%', fontFamily: 'Sentient'}}>Welcome to Faceworx, <br /> your trusted destination for personalized Botox and skin treatments.</h5>
             <div className={styles.cta}>
-              <Link className={styles.buttonFill} onClick={scrollHandle}  href="/#contact">
+              <Link className={styles.buttonFill} onClick={scrollHandle}  href="/#contact" id='contact-'>
                 <div id="contact-">Book Appointment</div>
               </Link> 
-              <Link className={styles.buttonStroke} onClick={scrollHandle}  href="/#treatments">
+              <Link className={styles.buttonStroke} onClick={scrollHandle}  href="/#treatments" id='treatments-'>
                 <div id="treatments-" >Treatments</div>
               </Link> 
             </div>
                    
-          </div>
+          </motion.div>
           
           
-        </div>
-        <div className={styles.scrollIndicator}>
-             <h5>SCROLL</h5>
-        </div> 
+        </motion.div>
+        <motion.div 
+        initial={{ opacity: 0}}
+        animate={{opacity: 1 }}
+        transition={{ duration: 1, delay: 2 }}  
+        className={styles.scrollIndicator}>
+             <p>SCROLL</p>
+        </motion.div> 
         <div className={styles.overlay}></div>
-        <div className={styles.fade}></div>
-        <div className={styles.fadeWhite}></div>
+        {/* <div className={styles.fade}></div> */}
+        <motion.div 
+          initial={{ opacity: .3 }}
+          animate={{opacity: 1}}
+          transition={{ duration: 1, delay: .5 }}  
+          className={styles.fadeWhite}></motion.div>
        
-    </div>
+    </motion.div>
   
   )
 }

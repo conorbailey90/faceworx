@@ -2,6 +2,7 @@
 import { useEffect, useRef} from 'react'
 import styles from './Testimonial.module.css'
 import testimonials from './testimonials.json'
+import { motion } from 'framer-motion'
 
 
 export default function Testimonial() {
@@ -29,7 +30,11 @@ export default function Testimonial() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.innerContainer}>
+            <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{opacity: 1}}
+            transition={{ duration: 1, delay: 0 }}
+            className={styles.innerContainer}>
                 <div className={styles.header}>
                     <h2 style={{marginBottom: '1rem'}}>What our clients say.</h2>
                 </div>
@@ -50,7 +55,7 @@ export default function Testimonial() {
                 <div className={styles.scrollIndicator}>
                     <div ref={bar} className={styles.progressBar}></div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

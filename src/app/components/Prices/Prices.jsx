@@ -1,10 +1,16 @@
+'use client'
 import React from 'react'
-import styles from './Prices.module.css'
+import styles from './Prices.module.css';
+import { motion } from 'framer-motion';
 
 function Prices() {
   return (
     <div id='about' className={styles.container}>
-    <div className={styles.subContainer}>
+    <motion.div 
+    initial={{ opacity: 0 }}
+    whileInView={{opacity: 1}}
+    transition={{ duration: 1, delay: 0 }}
+    className={styles.subContainer}>
         <h2 style={{gridColumn: '1 / span 12', marginBottom: '1rem'}}>Price List</h2>
      
         <div className={styles.botoxPrices}>
@@ -50,7 +56,7 @@ function Prices() {
           </ul>
         </div>
      
-    </div>
+    </motion.div>
   </div>
   )
 }
