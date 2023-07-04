@@ -12,21 +12,28 @@ export default function Contact({children}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('sending...')
-    fetch("https://formsubmit.co/ajax/conbailey90@gmail.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        name: name.current.value,
-        email: email.current.value,
-        message: message.current.value
-    })
-})
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
+    try{
+      let request = await fetch("https://formsubmit.co/ajax/conbailey90@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name.current.value,
+            email: email.current.value,
+            message: message.current.value
+        })
+      })
+      let res = await request.json();
+      console.log(res)
+      alert('Thank you for your email. We will respond shortly.')
+    }catch(err){
+      alert('Sorry, something went wrong. Please try again.')
+
+      console.log(err)
+    }
+    
   }
 
   return (
