@@ -44,7 +44,7 @@
 .menuToggle span {
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: #161616;
   border-radius: none;
 }
 
@@ -81,7 +81,8 @@
 .mobileNav {
   position: fixed;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content:§ center; */
   align-items: center;
   top: 0;
   left: 0;
@@ -98,12 +99,15 @@
 }
 
 .navLinks {
+  margin-top: 50px;
   position: relative;
-  top: -10%;
+  /* top: 50px; */
+  /* top: -20%; */
   display: flex;
   flex-direction: column;
   width: 95%;
-  justify-content: space-between;
+  /* height: 200px; */
+  /* justify-content: space-between; */
 }
 
 .link {
@@ -116,6 +120,18 @@
 
 .link:hover {
   opacity: 0.7;
+}
+
+.separator {
+  position: relative;
+  width: 95%;
+  height: 1px;
+  margin: 25px 0;
+  background-color: rgba(255, 255, 255, 0.438);
+}
+
+.igLink:hover{
+  opacity: .6;
 }
 
 @media only screen and (max-width: 600px) {

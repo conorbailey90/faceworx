@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import IgLogo from './IgLogo' 
 
 import styles from './MobileNav.module.css'
 
@@ -19,7 +20,6 @@ function MobileNav() {
     }
 
     const toggleMenu = () => {
-        console.log('to')
         menuActive ? setMenuActive(false) : setMenuActive(true)
     }
   return (
@@ -43,12 +43,17 @@ function MobileNav() {
                 <li><Link className={styles.link} onClick={scrollHandle} id="treatments-" href="/#treatments">Treatments</Link></li>
                 <li><Link className={styles.link} onClick={scrollHandle} id="contact-" href="/#contact">Contact</Link></li>
             </ul>
-        </div>
+            <div className={styles.separator}></div>   
+            <div style={{width: '95%'}}>
+                <a className={styles.igLink} href="https://instagram.com/faceworx.beauty?igshid=MzRlODBiNWFlZA" target='_blank'>  
+                    <IgLogo color='#ee9ca7' />
+                </a>
+            </div>
+            
+            </div>
+       
     </>
    
-        
-        
-
   )
 }
 
