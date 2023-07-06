@@ -41,6 +41,7 @@ function MobileNav() {
                 <li><Link className={styles.link} onClick={scrollHandle} id="home-" href="/#home">Home</Link></li>
                 <li><Link className={styles.link} onClick={scrollHandle} id="about-" href="/#about">About</Link></li>
                 <li><Link className={styles.link} onClick={scrollHandle} id="treatments-" href="/#treatments">Treatments</Link></li>
+                <li><Link className={styles.link} onClick={scrollHandle} id="faq-" href="/#faq">FAQs</Link></li>
                 <li><Link className={styles.link} onClick={scrollHandle} id="contact-" href="/#contact">Contact</Link></li>
             </ul>
             <div className={styles.separator}></div>   

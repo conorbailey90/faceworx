@@ -19,7 +19,7 @@ export default async function HomePage() {
       <Prices />
       <FAQ />
       <Testimonial />
-      <Separator id='contact' />
+  
       <Contact>
         <Location />
       </Contact>

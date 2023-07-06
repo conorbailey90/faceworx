@@ -216,3 +216,14 @@
     font-size: 0.833rem;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .buttonFill {
+    margin-top: 25px;
+
+  }
+  .buttonStroke {
+  
+    display: none;
+  }
+}

@@ -56,10 +56,11 @@ export default function Header() {
                
                 <div className={styles.navLinks}>
                     <ul>
-                        <li className={styles.homeLink}><Link  id="home-" href="/#home">Home</Link></li>
-                        <li className={styles.aboutLink}><Link   id="about-" href="/#about">About</Link></li>
-                        <li className={styles.treatmentsLink}><Link  id="treatments-" href="/#treatments">Treatments</Link></li>
-                        <li className={styles.contactLink}><Link   id="contact-" href="/#contact">Contact</Link></li>
+                        <li className={styles.homeLink}><Link id="home-" href="/#home">Home</Link></li>
+                        <li className={styles.aboutLink}><Link id="about-" href="/#about">About</Link></li>
+                        <li className={styles.treatmentsLink}><Link id="treatments-" href="/#treatments">Treatments</Link></li>
+                        <li className={styles.treatmentsLink}><Link id="faq-" href="/#faq">FAQs</Link></li>
+                        <li className={styles.contactLink}><Link id="contact-" href="/#contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>
@@ -83,6 +84,7 @@ export default function Header() {
                         <li className={styles.homeLink}><Link onClick={scrollHandle} id="home-" href="/#home">Home</Link></li>
                         <li className={styles.aboutLink}><Link onClick={scrollHandle} id="about-" href="/#about">About</Link></li>
                         <li className={styles.treatmentsLink}><Link onClick={scrollHandle} id="treatments-" href="/#treatments">Treatments</Link></li>
+                        <li className={styles.treatmentsLink}><Link onClick={scrollHandle}  id="faq-" href="/#faq">FAQs</Link></li>
                         <li className={styles.contactLink}><Link onClick={scrollHandle} id="contact-" href="/#contact">Contact</Link></li>
                     </ul>
                 </div>

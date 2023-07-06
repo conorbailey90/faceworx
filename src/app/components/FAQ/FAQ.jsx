@@ -14,7 +14,7 @@ function FAQ() {
         e.target.classList.toggle('active')
     }
   return (
-    <div className={styles.container}>
+    <div id='faq'  className={styles.container}>
     <motion.div 
     
     initial={{ opacity: 0 }}
