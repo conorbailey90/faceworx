@@ -8,10 +8,12 @@ export default function Contact({children}) {
   const name = useRef();
   const email = useRef();
   const message = useRef();
+  const sendingDiv = useRef()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('sending...')
+    sendingDiv.current.style.display = 'flex'
     try{
       let request = await fetch("https://formsubmit.co/ajax/conbailey90@gmail.com", {
         method: "POST",
@@ -27,10 +29,12 @@ export default function Contact({children}) {
       })
       let res = await request.json();
       console.log(res)
+
       alert('Thank you for your email. We will respond shortly.')
       name.current.value = ''
       email.current.value = ''
       message.current.value = ''
+      sendingDiv.current.style.display = 'none'
     }catch(err){
       alert('Sorry, something went wrong. Please try again.')
       console.log(err)
@@ -39,6 +43,9 @@ export default function Contact({children}) {
 
   return (
     <div id='contact' className={styles.container}>
+      <div ref={sendingDiv} className={styles.sendingDiv}>
+        <p className={styles.sendingText}>Sending...</p>
+      </div>
       
       <form className={styles.form} onSubmit={handleSubmit} action="https://formsubmit.co/conbailey90@gmail.com" method="POST">
           <h2>Get in touch</h2> <br />
