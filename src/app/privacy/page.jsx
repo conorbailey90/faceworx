@@ -5,7 +5,7 @@ function Privacy() {
   return (
     <div className={styles.container}>
       <div className={styles.subContainer}>
-
+        <br />
         <h2>Privacy Policy</h2>
         <br />
         <p>At Faceworx, we are committed to protecting the privacy and security of our website users and clients. This Privacy Policy outlines the types of personal information we collect, how we use and protect it, and the choices you have regarding your information. By using our website, you agree to the terms of this Privacy Policy.</p>
