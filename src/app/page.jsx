@@ -19,12 +19,9 @@ export default async function HomePage() {
       <Prices />
       <FAQ />
       <Testimonial />
-  
       <Contact>
         <Location />
       </Contact>
-      
-      {/* <EmailConfirmation /> */}
     </main>
   )
 }
