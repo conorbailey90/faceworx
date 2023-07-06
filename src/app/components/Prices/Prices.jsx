@@ -14,19 +14,19 @@ function Prices() {
         <h2 style={{gridColumn: '1 / span 12', marginBottom: '1rem'}}>Price List</h2>
      
         <div className={styles.botoxPrices}>
-          <h3 style={{marginBottom: '1rem'}}>Botox</h3>
+          <h3 style={{marginBottom: '1rem'}}>Anti-Wrinkle Injections</h3>
           <ul>
             <li className={styles.priceLi}>
               <p>1 Area</p>
-              <p>£200</p>
+              <p>£80</p>
             </li>
             <li className={styles.priceLi}>
               <p>2 Areas</p>
-              <p>£220</p>
+              <p>£140</p>
             </li>
             <li className={styles.priceLi}>
               <p>3 Areas</p>
-              <p>£250</p>
+              <p>£200</p>
             </li>
           </ul>
         </div>
@@ -34,24 +34,56 @@ function Prices() {
         <h3 style={{marginBottom: '1rem'}}>Dermal Fillers</h3>
           <ul>
             <li className={styles.priceLi}>
-              <p>Volume Lips 1.1ml</p>
-              <p>£180</p>
+              <p>Lips - 0.5ml</p>
+              <p>£140</p>
             </li>
             <li className={styles.priceLi}>
-              <p>Volume Lips 0.5ml</p>
-              <p>£150</p>
+              <p>Lips - 1ml</p>
+              <p>£200</p>
             </li>
             <li className={styles.priceLi}>
-              <p>Cheeks Contour</p>
-              <p>£250</p>
+              <p>Cheeks - 1ml</p>
+              <p>£200</p>
             </li>
             <li className={styles.priceLi}>
-              <p>Jawline Contour</p>
-              <p>£250</p>
+              <p>Cheeks - 2ml</p>
+              <p>£360</p>
+            </li>
+            
+          </ul>
+        </div>
+        <div className={styles.fillerPackagesPrices}>
+        <h3 style={{marginBottom: '1rem'}}>Filler Packages</h3>
+          <ul>
+            <li className={styles.priceLi}>
+              <p>Filler 3ml</p>
+              <p>£520</p>
             </li>
             <li className={styles.priceLi}>
-              <p>Marionette Lines</p>
-              <p>£250</p>
+              <p>Filler 4ml</p>
+              <p>£700</p>
+            </li>
+            <li className={styles.priceLi}>
+              <p>Filler 5ml</p>
+              <p>£850</p>
+            </li>
+            <li className={styles.priceLi}>
+              <p>Filler 6ml</p>
+              <p>£1,000</p>
+            </li>
+          </ul>
+        </div>
+        <div className={styles.skinBoosterPrices}>
+        <h3 style={{marginBottom: '1rem'}}>Skin Boosters</h3>
+          <ul>
+         
+            <li className={styles.priceLi}>
+              <p>Profhilo</p>
+              <p>£240</p>
+            </li>
+            <li className={styles.priceLi}>
+              <p>Sunekos (4 sessions)</p>
+              <p>£400</p>
             </li>
           </ul>
         </div>

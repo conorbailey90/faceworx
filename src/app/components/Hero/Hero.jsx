@@ -47,8 +47,6 @@ export default function Hero() {
             </div>
                    
           </motion.div>
-          
-          
         </motion.div>
         <motion.div 
         initial={{ opacity: 0}}
@@ -58,12 +56,13 @@ export default function Hero() {
              <p>SCROLL</p>
         </motion.div> 
         <div className={styles.overlay}></div>
-        {/* <div className={styles.fade}></div> */}
         <motion.div 
           initial={{ opacity: .3 }}
           animate={{opacity: 1}}
           transition={{ duration: 1, delay: .5 }}  
-          className={styles.fadeWhite}></motion.div>
+          className={styles.fadeWhite}>
+
+        </motion.div>
        
     </motion.div>
   
