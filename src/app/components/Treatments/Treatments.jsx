@@ -18,8 +18,8 @@ export default function Treatments() {
         whileInView={{opacity: 1}}
         transition={{ duration: 1, delay: 0 }}
         className={styles.treatmentOne}>
-            <h3>Botox</h3><br />
-            <p>Experience smoother, more youthful-looking skin with our Botox treatments. We provide safe and effective injections, targeting facial wrinkles and lines. Achieve natural-looking results with minimal downtime. Schedule your consultation today.</p>
+            <h3>Anti-Wrinkle Injections</h3><br />
+            <p>Experience smoother, more youthful-looking skin with our anti-wrinkle injections. We provide safe and effective injections, targeting facial wrinkles and lines. Achieve natural-looking results with minimal downtime. Schedule your consultation today.</p>
         </motion.div>
         <motion.div 
         initial={{ opacity: 0 }}

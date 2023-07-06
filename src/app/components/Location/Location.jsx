@@ -15,6 +15,11 @@ export default function Location() {
             <p>Billericay</p>
             <p>Essex</p>
             <p>CM12 9TD</p> 
+            <br />
+            <p>Phone: 07545 563246 </p>
+            <p>E-Mail: <a href="mailto:info@faceworx.com">info@faceworx.com</a></p>
+
+          
             <div className={styles.socials}>
          
             <a href="https://instagram.com/faceworx.beauty?igshid=MzRlODBiNWFlZA" target='_blank'>
