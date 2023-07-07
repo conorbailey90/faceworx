@@ -15,7 +15,7 @@ export default function Contact({children}) {
     console.log('sending...')
     sendingDiv.current.style.display = 'flex'
     try{
-      let request = await fetch("https://formsubmit.co/ajax/info@faceworx.com", {
+      let request = await fetch("https://formsubmit.co/ajax/info@faceworx.beauty", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
