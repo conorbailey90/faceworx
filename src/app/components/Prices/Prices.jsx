@@ -78,6 +78,9 @@ function Prices() {
           <ul>
          
             <li className={styles.priceLi}>
+              <p>Skin Booster prices from £150</p>
+            </li>
+            <li className={styles.priceLi}>
               <p>Profhilo</p>
               <p>£240</p>
             </li>
