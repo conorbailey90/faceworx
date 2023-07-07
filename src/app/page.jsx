@@ -5,7 +5,10 @@ import {Hero, About, Testimonial, Treatments, Contact, Location, Canvas, MobileN
 export const metadata = {
   title: 'FACEWORX',
   description: 'Faceworx anti-wrinkle injections, dermal fillers and skin boosters.',
-  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: logo}
+  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: logo},
+  icons: {
+    icon: '/images/favicon.ico',
+  },
 }
 
 export default async function HomePage() {
