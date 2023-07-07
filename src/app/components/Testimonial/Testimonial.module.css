@@ -24,7 +24,7 @@
   border: 1px solid var(--border-color);
   /* border: 1px solid var(--border-color); */
   padding: 0 1rem;
-  background-color: #161616b6;
+  background-color: #161616;
 }
 
 .scrollSection::-webkit-scrollbar {
