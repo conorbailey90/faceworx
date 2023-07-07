@@ -2,7 +2,7 @@
 import styles from './page.module.css'
 import {Hero, About, Testimonial, Treatments, Contact, Location, Canvas, MobileNav, Separator , Prices, FAQ} from './components/export'
 export const metadata = {
-  title: 'FACEWORKS',
+  title: 'FACEWORX',
   description: 'Faceworx anti-wrinkle injections, dermal fillers and skin boosters.',
 }
 
