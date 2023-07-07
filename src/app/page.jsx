@@ -1,9 +1,9 @@
-import Image from 'next/image'
+
 import styles from './page.module.css'
-import Link from 'next/link'
 import {Hero, About, Testimonial, Treatments, Contact, Location, Canvas, MobileNav, Separator , Prices, FAQ} from './components/export'
 export const metadata = {
-  title: 'FACEWORKS'
+  title: 'FACEWORKS',
+  description: 'Faceworx anti-wrinkle injections, dermal fillers and skin boosters.',
 }
 
 export default async function HomePage() {
