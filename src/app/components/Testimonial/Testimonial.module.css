@@ -24,7 +24,7 @@
   border: 1px solid var(--border-color);
   /* border: 1px solid var(--border-color); */
   padding: 0 1rem;
-  background-color: #161616;
+  background-color: #161616b6;
 }
 
 .scrollSection::-webkit-scrollbar {
@@ -45,7 +45,6 @@
   width: 400px;
 
   padding: 1rem;
-  background: #161616;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
