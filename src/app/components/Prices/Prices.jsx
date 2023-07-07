@@ -78,7 +78,7 @@ function Prices() {
           <ul>
          
             <li className={styles.priceLi}>
-              <p>Skin Booster prices from £150</p>
+              <p>Skin booster prices start from £150</p>
             </li>
             <li className={styles.priceLi}>
               <p>Profhilo</p>
