@@ -18,7 +18,7 @@ export default function About() {
                 At Faceworx, your safety and comfort are our top priorities. We strive to create a relaxed and welcoming environment while delivering precise anti-wrinkle injections.
                 We believe in education and empowerment. We will understand your skincare goals, answer your questions, and provide personalized recommendations for maintaining and enhancing your results.<br /><br />
                 In addition to anti-wrinkle treatments, we offer complementary skin treatments like dermal fillers and boosters to further enhance your appearance.
-                Discover the transformative power of our skin treatments at Faceworx. Schedule your consultation today and take the first step towards a more youthful and refreshed look.
+                Discover the transformative power of our skin treatments at Faceworx. Schedule your consultation today and take the first step towards a more youthful and refreshed&nbsp;look.
             </p>
             
         </motion.div>

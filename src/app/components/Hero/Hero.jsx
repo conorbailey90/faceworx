@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 1 }}  
             className={styles.heroText}>
             <Logo color='#161616' />
-            <h5 className={styles.heroTag} style={{ textAlign: 'center', textTransform: 'uppercase', width: '100%', fontFamily: 'Sentient'}}>Welcome to Faceworx, <br /> your trusted destination for personalized Botox and skin treatments.</h5>
+            <h5 className={styles.heroTag} style={{ textAlign: 'center', textTransform: 'uppercase', width: '100%', fontFamily: 'Sentient'}}>Welcome to Faceworx, <br /> your trusted destination for personalized Botox and&nbsp;skin&nbsp;treatments.</h5>
             <div className={styles.cta}>
               <Link className={styles.buttonFill} onClick={scrollHandle}  href="/#contact" id='contact-'>
                 <div id="contact-">Book Appointment</div>
