@@ -17,7 +17,7 @@ function FAQ() {
     <div id='faq'  className={styles.container}>
     <motion.div 
     
-    initial={{ opacity: 0 }}
+    initial={{ opacity: 1 }}
           whileInView={{opacity: 1}}
           transition={{ duration: 1, delay: 0 }}
           className={styles.subContainer}>

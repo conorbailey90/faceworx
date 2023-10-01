@@ -23,7 +23,7 @@ export default function About() {
             
         </motion.div>
         <motion.div 
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         whileInView={{opacity: 1}}
         transition={{ duration: 1, delay: 0 }} 
         className={styles.imageContainer}>
