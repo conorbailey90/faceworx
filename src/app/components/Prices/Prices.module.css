@@ -32,12 +32,27 @@
   grid-column: 7 / span 5;
 }
 
+.microNeedlingPrices{
+  grid-column: 1 / span 5;
+}
+
 .priceLi {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
   padding: 0.5rem 0;
+}
+
+.desc{
+  font-size: .8rem;
+  margin-top: .5rem;
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 @media only screen and (max-width: 800px) {
@@ -58,6 +73,10 @@
   }
 
   .skinBoosterPrices {
+    grid-column: 1 / span 13;
+  }
+
+  .microNeedlingPrices{
     grid-column: 1 / span 13;
   }
 

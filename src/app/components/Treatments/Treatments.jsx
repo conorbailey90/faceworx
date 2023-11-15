@@ -37,6 +37,15 @@ export default function Treatments() {
             <h3>Booster</h3><br />
             <p>Revitalize your skin with our dermal booster treatments. We use advanced techniques and premium products to hydrate and rejuvenate your skin from within. Experience a plumper, more radiant complexion with minimal downtime. Discover the secret to youthful skin and schedule your consultation today.</p>
         </motion.div>
+        
+        <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{opacity: 1}}
+        transition={{ duration: 1, delay: 0 }}
+        className={styles.treatmentFour}>
+            <h3>Micro-Needling</h3><br />
+            <p>A treatment that delivers a "controlled' injury to the skin using micro needles, causing collagen and elastin fibres to be stimulated to reproduce and cell turnover accelerated. Skin is left firmer, smoother and glowing.</p>
+        </motion.div>
     </div>
   )
 }
