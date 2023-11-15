@@ -47,12 +47,14 @@
 .desc{
   font-size: .8rem;
   margin-top: .5rem;
+
 }
 
 .price{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
