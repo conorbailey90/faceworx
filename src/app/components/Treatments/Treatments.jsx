@@ -44,7 +44,7 @@ export default function Treatments() {
         transition={{ duration: 1, delay: 0 }}
         className={styles.treatmentFour}>
             <h3>Micro-Needling</h3><br />
-            <p>A treatment that delivers a "controlled' injury to the skin using micro needles, causing collagen and elastin fibres to be stimulated to reproduce and cell turnover accelerated. Skin is left firmer, smoother and glowing.</p>
+            <p>A treatment that delivers a "controlled" injury to the skin using micro needles, causing collagen and elastin fibres to be stimulated to reproduce and cell turnover accelerated. Skin is left firmer, smoother and glowing.</p>
         </motion.div>
     </div>
   )
