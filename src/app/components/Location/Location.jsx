@@ -17,7 +17,7 @@ export default function Location() {
             <p>CM12 9TD</p> 
             <br />
             <p>Phone: 07545 563246 </p>
-            <p>E-Mail: <a href="mailto:info@faceworx.beauty">info@faceworx.beauty</a></p>
+            <p>E-Mail: <a href="mailto:denisefaceworx@gmail.com">denisefaceworx@gmail.com</a></p>
 
           
             <div className={styles.socials}>

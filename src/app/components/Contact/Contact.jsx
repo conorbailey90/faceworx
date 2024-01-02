@@ -15,7 +15,7 @@ export default function Contact({children}) {
     console.log('sending...')
     sendingDiv.current.style.display = 'flex'
     try{
-      let request = await fetch("https://formsubmit.co/ajax/info@faceworx.beauty", {
+      let request = await fetch("https://formsubmit.co/ajax/denisefaceworx@gmail.com", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ export default function Contact({children}) {
         <p className={styles.sendingText}>Sending...</p>
       </div>
       
-      <form className={styles.form} onSubmit={handleSubmit} action="https://formsubmit.co/conbailey90@gmail.com" method="POST">
+      <form className={styles.form} onSubmit={handleSubmit} action="https://formsubmit.co/denisefaceworx@gmail.com" method="POST">
           <h2>Get in touch</h2> <br />
           <p>For enquiries, please enter your name, email and message using the form below and we will respond to you as soon as possible. </p>
           <input type="hidden" name="_captcha" value="false" /> 

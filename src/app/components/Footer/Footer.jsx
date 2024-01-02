@@ -17,7 +17,7 @@ export default function Footer() {
             <p>CM12 9TD</p>
             <br />
             <p>Phone: 07545 563246 </p>
-            <p>E-Mail: <a style={{color: 'white'}} target='_blank' href="mailto:info@faceworx.beauty">info@faceworx.beauty</a></p>
+            <p>E-Mail: <a style={{color: 'white'}} target='_blank' href="mailto:denisefaceworx@gmail.com">denisefaceworx@gmail.com</a></p>
 
         </div>
         <div className={styles.socials}>
