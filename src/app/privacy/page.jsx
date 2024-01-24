@@ -1,12 +1,10 @@
-import React from 'react'
+import Image from 'next/image'
 import styles from './page.module.css';
-import logo from '../../../public/images/logo.png'
-
 
 export const metadata = {
   title: 'FACEWORX',
   description: 'Faceworx anti-wrinkle injections, dermal fillers and skin boosters.',
-  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: logo},
+  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: '/images/logo.png'},
   icons: {
     icon: '/images/favicon.ico',
   },
@@ -98,8 +96,6 @@ function Privacy() {
         <p>This Privacy Policy was last updated on 03/07/2023.</p>
   
       </div>
-
-       
     </div>
   )
 }

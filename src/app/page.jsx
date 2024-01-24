@@ -1,31 +1,40 @@
 
 import styles from './page.module.css'
-import logo from '../../public/images/logo.png'
-import {Hero, About, Testimonial, Treatments, Contact, Location, Canvas, MobileNav, Separator , Prices, FAQ} from './components/export'
+import { getCategories } from '../../sanity/sanity.query'
+import {Hero, About, Testimonial, Treatments, Contact, Location, MobileNav, Separator , Prices, FAQ} from '../components/export'
+
 export const metadata = {
   title: 'FACEWORX',
   description: 'Faceworx anti-wrinkle injections, dermal fillers and skin boosters.',
-  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: logo},
+  openGraph: { type: "website", url: "https://faceworx.beauty", title: "FACEWORX", description: "Faceworx anti-wrinkle injections, dermal fillers and skin boosters.", siteName: "FACEWORX", image: '/images/logo.png'},
   icons: {
     icon: '/images/favicon.ico',
   },
 }
 
-export default async function HomePage() {
+export const revalidate = 10 
 
+export default async function HomePage() {
+  let categories = []
+  try{
+    categories = await getCategories();
+
+  }catch(err){
+    console.log(err)
+  }
+ 
   return (
     <main className={styles.main}>
       <MobileNav />
-      <Canvas />
       <Hero />
       <About />
       <Separator id='treatments' />
       <Treatments />
-      <Prices />
+      <Prices categories={categories} />
       <FAQ />
       <Testimonial />
       <Contact>
-        <Location />
+      <Location />
       </Contact>
     </main>
   )
