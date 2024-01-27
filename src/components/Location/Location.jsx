@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Location() {
   return (
-    <div className={styles.container}>
+    <div id='contact' className={styles.container}>
         <div className={styles.header}>
             <h2>Where to find us</h2>
             <br />
