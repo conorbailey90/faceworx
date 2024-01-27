@@ -1,6 +1,9 @@
 .container {
   position: relative;
   width: 100%;
+  background-image: linear-gradient(45deg, #ee9ca7a1 0%, #ffdde1b1 100%);
+  border-top: 1px solid var(--border-color);
+
 }
 
 .header {

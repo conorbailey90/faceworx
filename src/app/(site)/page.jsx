@@ -1,7 +1,7 @@
 
 import styles from './page.module.css'
-import { getCategories } from '../../sanity/sanity.query'
-import {Hero, About, Testimonial, Treatments, Contact, Location, MobileNav, Separator , Prices, FAQ} from '../components/export'
+import { getCategories } from '../../../sanity/sanity.query'
+import {Hero, About, Testimonial, Treatments, Contact, Location, MobileNav, Separator , Prices, FAQ} from '../../components/export'
 
 export const metadata = {
   title: 'FACEWORX',
@@ -33,9 +33,8 @@ export default async function HomePage() {
       <Prices categories={categories} />
       <FAQ />
       <Testimonial />
-      <Contact>
+      {/* <Contact /> */}
       <Location />
-      </Contact>
     </main>
   )
 }
