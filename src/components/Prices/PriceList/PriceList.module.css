@@ -1,14 +1,14 @@
 .even{
     grid-column: span 6;
     margin-bottom: 2rem;
-    padding: 1rem;
+
       
 }
 
 .odd {
     grid-column: span 6;
     margin-bottom: 2rem;
-    padding: 1rem;
+
 }
 
 .priceLi {
