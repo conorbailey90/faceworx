@@ -1,7 +1,6 @@
 
 import styles from './page.module.css'
-import { getCategories } from '../../../sanity/sanity.query'
-import {Hero, About, Testimonial, Treatments, Contact, Location, MobileNav, Separator , Prices, FAQ} from '../../components/export'
+import {Hero, About, Testimonial, Treatments, Contact, Location, MobileNav, Separator , Prices, FAQ} from '../components/export'
 
 export const metadata = {
   title: 'FACEWORX',
@@ -15,13 +14,7 @@ export const metadata = {
 export const revalidate = 10 
 
 export default async function HomePage() {
-  let categories = []
-  try{
-    categories = await getCategories();
-
-  }catch(err){
-    console.log(err)
-  }
+ 
  
   return (
     <main className={styles.main}>
@@ -30,7 +23,7 @@ export default async function HomePage() {
       <About />
       <Separator id='treatments' />
       <Treatments />
-      <Prices categories={categories} />
+      <Prices />
       <FAQ />
       <Testimonial />
       {/* <Contact /> */}

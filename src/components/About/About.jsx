@@ -12,14 +12,10 @@ export default function About() {
           whileInView={{opacity: 1}}
           transition={{ duration: 1, delay: 0 }}   className={styles.aboutText}>
             <h2>Welcome</h2> <br />
-            <p>Welcome to Faceworx, your trusted destination for personalized anti-wrinkle and skin treatments. We specialize in helping you achieve your aesthetic goals with expert care and precision.
-                Our advanced techniques and customized approach ensure effective solutions for your specific concerns. From reducing wrinkles to enhancing facial features, our anti-wrinkle injection treatments provide natural-looking results that enhance your unique beauty.<br /><br />
-                At Faceworx, your safety and comfort are our top priorities. We strive to create a relaxed and welcoming environment while delivering precise anti-wrinkle injections.
-                We believe in education and empowerment. We will understand your skincare goals, answer your questions, and provide personalized recommendations for maintaining and enhancing your results.<br /><br />
-                In addition to anti-wrinkle treatments, we offer complementary skin treatments like dermal fillers and boosters to further enhance your appearance.
-                Discover the transformative power of our skin treatments at Faceworx. Schedule your consultation today and take the first step towards a more youthful and refreshed&nbsp;look.
-            </p>
-            
+            <p>Welcome to Faceworx! At Faceworx, we’re passionate about helping you feel confident and radiant in your own skin with treatments tailored just for you. Whether you’re looking to smooth away wrinkles, lift your natural features, or rejuvenate your glow, we’re here to guide you every step of the way with expertise and care.</p><br />
+            <p>At Faceworx, we offer a range of treatments to enhance your unique beauty. Our anti-wrinkle injections, like our popular Botox treatments for areas like bunny lines or gummy smiles, deliver natural-looking results.<br /><br />Curious about skin boosters or microneedling? From Profhilo to Derma 2.0’s advanced peels, we provide solutions to refresh and revitalize your skin, customized to your goals.</p><br />
+            <p>Your safety, comfort, and satisfaction are our top priorities at Faceworx, and we’re dedicated to ensuring a welcoming and professional experience.</p><br />
+            <p>Ready to discover the Faceworx difference? Book your consultation today and let’s start your journey to a more youthful, refreshed you! At Faceworx, we can’t wait to meet you!</p>
         </motion.div>
         <motion.div 
           initial={{ opacity: 1 }}

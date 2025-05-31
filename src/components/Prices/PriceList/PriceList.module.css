@@ -1,11 +1,14 @@
 .even{
-    grid-column: 1 / span 5;
+    grid-column: span 6;
     margin-bottom: 2rem;
+    padding: 1rem;
+      
 }
 
 .odd {
-    grid-column: 7 / span 5;
+    grid-column: span 6;
     margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .priceLi {
@@ -24,13 +27,14 @@
 .price{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+   text-align: right;
     margin-left: 1rem;
+    flex: 2;
 }
 
 @media only screen and (max-width: 800px) {
     .odd, .even {
-      grid-column: 1 / span 13;
+      grid-column: span 13;
       margin-bottom: 1rem;
     }
   
