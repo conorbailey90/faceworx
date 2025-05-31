@@ -1,49 +1,26 @@
-.even{
+.listItem{
     grid-column: span 6;
-    margin-bottom: 2rem;
-
-      
+   
 }
 
-.odd {
-    grid-column: span 6;
-    margin-bottom: 2rem;
-
+.priceLi{
+ display: flex;
+ justify-content: space-between;
+  border-bottom: 1px solid black;
+   padding: 1rem 0;
 }
 
-.priceLi {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    padding: 0.5rem 0;
-}
 
-.desc{
-    font-size: .8rem;
-    margin-top: .5rem;
-}
 
-.price{
-    display: flex;
-    flex-direction: column;
-   text-align: right;
-    margin-left: 1rem;
-    flex: 2;
-}
 
-@media only screen and (max-width: 800px) {
-    .odd, .even {
-      grid-column: span 13;
-      margin-bottom: 1rem;
+@media only screen and (max-width: 600px) {
+    .listItem{
+        grid-column: span 12;
+        margin-bottom: 2rem;
     }
-  
-    .priceLi {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border-color);
-      padding: 0.5rem 0;
+
+    .treatment{
+        padding-right: 1rem;
     }
-  }
-  
+
+}

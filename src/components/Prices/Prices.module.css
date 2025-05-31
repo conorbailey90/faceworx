@@ -10,8 +10,19 @@
 
 .subContainer {
   width: 95%;
-  max-width: var(--max-width);
+  overflow: hidden;
+  /* max-width: var(--max-width); */
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(12, 1fr);
+}
+
+
+@media only screen and (max-width: 600px) {
+.subContainer {
+
+  gap: 0rem;
+
+}
+
 }
