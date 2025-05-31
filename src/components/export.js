@@ -13,3 +13,4 @@ export {default as MobileNav} from './MobileNav/MobileNav';
 export {default as Separator} from './Separator/Separator'
 export {default as Prices} from './Prices/Prices'
 export {default as FAQ} from './FAQ/FAQ'
+export {default as PhotoGallery} from './PhotoGallery/PhotoGallery'
